@@ -1,7 +1,5 @@
-# 👋 Hello, I'm Idan Vimenetz
-
 <p align="center">
-  <em>Electrical Engineering Student & AI Enthusiast ⚡🤖</em>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,11,20,30&height=220&section=header&text=Idan%20Vimenetz&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Electrical%20Engineering%20Student%20&%20AI%20Enthusiast%20⚡🤖&descSize=20&descAlignY=65" width="100%"/>
 </p>
 
 ---
@@ -15,13 +13,13 @@ I am an Electrical Engineering student at Ruppin Academic Center, with a deep pa
 Throughout my studies, I have built a strong theoretical and practical foundation in both hardware and software engineering:
 
 * **Mathematics & Physics:** Infinitesimal Calculus (I & II), Linear Algebra, Physics (I & II), Ordinary Differential Equations (ODE), Partial Differential Equations (PDE).
-* **Software & Programming:** Principles of Programming & C Language, Advanced C Programming Topics, TypeScript, Python, MATLAB.
-* **Core Electrical & Computer Engineering:** Circuit Theory, Digital Systems, Computer Architecture, Digital Systems Laboratory (using FPGA), Electrical Circuits Laboratory.
+* **Software & Programming:** Principles of Programming & C Language, Advanced C Programming Topics, TypeScript, Python, MATLAB[cite: 1].
+* **Core Electrical & Computer Engineering:** Circuit Theory, Digital Systems, Computer Architecture, Digital Systems Laboratory (using FPGA), Electrical Circuits Laboratory[cite: 1].
 
 ---
 
 ### 🛠️ Technologies & Tools
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" />
   <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
@@ -32,7 +30,7 @@ Throughout my studies, I have built a strong theoretical and practical foundatio
 
 ---
 
-### 📊 GitHub Stats
+### 📊 GitHub Stats & Streak
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=DanoV1m&show_icons=true&theme=radical&hide_border=true" />
 </p>
