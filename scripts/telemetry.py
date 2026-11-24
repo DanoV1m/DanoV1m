@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 USER = "DanoV1m"
 API = "https://api.github.com"
 NAMES = ("github-stats", "top-languages", "contribution-3d", "contribution-snake")
-COLORS = ("#16283C", "#164E63", "#0369A1", "#2563EB", "#38BDF8")
+COLORS = ("#16283C", "#164C78", "#1271B7", "#2563EB", "#67E8F9")
 
 
 def request(path, token, payload=None):
@@ -64,7 +64,7 @@ def text(x, y, label, size=16, color="#E2E8F0", weight="normal"):
 
 def svg(title, h, body):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="900" height="{h}" viewBox="0 0 900 {h}" role="img">'
-            f'<title>{html.escape(title)}</title><rect x="1" y="1" width="898" height="{h-2}" rx="14" fill="#0D1828" stroke="#284764" stroke-width="2"/>'
+            f'<title>{html.escape(title)}</title><rect x="1" y="1" width="898" height="{h-2}" rx="14" fill="#0B1728" stroke="#3184C5" stroke-width="2"/>'
             + body + '</svg>\n')
 
 
@@ -83,20 +83,20 @@ def render(data, date):
     maximum = max(1, max(n for _, _, n in days))
     color = lambda n: COLORS[0 if n == 0 else min(4, 1 + int(3 * math.log1p(n) / math.log1p(maximum)))]
     stamp = f"Updated {date} UTC"
-    stats = text(22, 30, "PUBLIC REPOSITORY TELEMETRY", 16, "#38BDF8", "bold")
+    stats = text(22, 30, "04 // DEVELOPMENT TELEMETRY", 16, "#67E8F9", "bold")
     for i, (label, value) in enumerate([("Repositories", data["repos"]), ("Stars", data["stars"]), ("Forks", data["forks"]), ("Calendar contributions", data["calendar"]["totalContributions"])]):
         x = 22 + i * 220
         stats += text(x, 69, value, 27, "#F1F5F9", "bold") + text(x, 91, label, 12, "#94A3B8")
     stats += text(22, 119, stamp, 11, "#94A3B8")
     items = sorted(((k, v) for k, v in data["langs"].items() if v > 0), key=lambda x: (-x[1], x[0]))
     total = sum(v for _, v in items)
-    lang = text(22, 30, "PUBLIC REPOSITORY LANGUAGES / BYTES", 16, "#38BDF8", "bold")
+    lang = text(22, 30, "04 // TOP LANGUAGES / REPOSITORY BYTES", 16, "#67E8F9", "bold")
     if total:
         top = items[:7]
         if len(items) > 7:
             top.append(("Other", sum(v for _, v in items[7:])))
         x = 22.0
-        palette = ["#38BDF8","#2563EB","#60A5FA","#0891B2","#818CF8","#94A3B8","#0E7490","#64748B"]
+        palette = ["#67E8F9","#2563EB","#60A5FA","#0891B2","#818CF8","#94A3B8","#0E7490","#64748B"]
         for i, (name, value) in enumerate(top):
             width = 856 * value / total
             lang += f'<rect x="{x:.3f}" y="44" width="{width:.3f}" height="12" fill="{palette[i]}"/>'
@@ -107,22 +107,22 @@ def render(data, date):
     else:
         lang += text(22, 80, "No language bytes reported.", 14)
     lang += text(22, 131, stamp + " · Composition, not proficiency", 11, "#94A3B8")
-    iso = text(22, 30, "3D CONTRIBUTION LANDSCAPE", 16, "#38BDF8", "bold")
+    iso = text(22, 30, "05 // 3D CONTRIBUTION LANDSCAPE", 16, "#67E8F9", "bold")
     for c, r, n in sorted(days, key=lambda d: (d[0], -d[1])):
         x, y = 32 + c * 14 + (6-r) * 9, 113 + c * 1.2 - (6-r) * 4.7
         height = 0 if n == 0 else 4 + 58 * math.log1p(n) / math.log1p(maximum)
         t = y-height
         iso += f'<g><title>{n} contributions</title><path d="M{x},{t} l7,-3 7,3 -7,3 Z" fill="{color(n)}"/>'
         if height:
-            iso += f'<path d="M{x},{t} l7,3 v{height} l-7,-3 Z" fill="#164E63"/><path d="M{x+7},{t+3} l7,-3 v{height} l-7,3 Z" fill="#075985"/>'
+            iso += f'<path d="M{x},{t} l7,3 v{height} l-7,-3 Z" fill="#164C78"/><path d="M{x+7},{t+3} l7,-3 v{height} l-7,3 Z" fill="#176A9C"/>'
         iso += '</g>'
     iso += text(22, 205, stamp + " · Height is logarithmic · One tile per day", 11, "#94A3B8")
-    snake = text(22, 30, "CONTRIBUTION SNAKE / ANIMATED SWEEP", 16, "#38BDF8", "bold")
+    snake = text(22, 30, "06 // CONTRIBUTION SNAKE / ANIMATED SWEEP", 16, "#67E8F9", "bold")
     for c, r, n in days:
         snake += f'<rect x="{22+c*16}" y="{44+r*16}" width="13" height="13" rx="2" fill="{color(n)}"><title>{n} contributions</title></rect>'
     points = [(22+c*16+6.5, 44+r*16+6.5) for c,r,n in sorted(days, key=lambda d: (d[1], d[0] if d[1]%2==0 else -d[0]))]
     path = "M" + " L".join(f"{x},{y}" for x,y in points)
-    snake += f'<path id="route" d="{path}" fill="none" stroke="#67E8F9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="5 95" stroke-dashoffset="5"><animate attributeName="stroke-dashoffset" values="5;-100" dur="25s" repeatCount="indefinite"/></path>'
+    snake += f'<path id="route" d="{path}" fill="none" stroke="#7DD3FC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="5 95" stroke-dashoffset="5"><animate attributeName="stroke-dashoffset" values="5;-100" dur="25s" repeatCount="indefinite"/></path>'
     snake += text(22, 174, stamp + " · Animated path over actual contribution cells", 11, "#94A3B8")
     return dict(zip(NAMES, [svg("Public repository statistics", 138, stats), svg("Public languages", 148, lang), svg("Contribution landscape", 223, iso), svg("Contribution snake", 190, snake)]))
 
