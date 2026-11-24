@@ -1,0 +1,9 @@
+# Engineering Command Center V2.0 — review candidate
+
+- V2 builds from the existing successful telemetry refresh. Four public projects remain linked; existing validation caveats, academic background and review branches are preserved. No private project or unreviewed public project is promoted.
+- Dark panels, neon corners, chip artwork, terminal and adjacent LinkedIn link, system overview with exact requested bio, six focus tags, one local technology icon strip, four original illustrated cards, blue telemetry and disconnected Spotify panel.
+- The technology artwork and project illustrations are vector interpretations, not official logos in every detail, screenshots, measurements or physical validation.
+- GitHub sanitizes README HTML/CSS. The native shell, sidebar, achievements and site-wide theme cannot be redesigned by README assets. Set Dark default manually via https://github.com/settings/appearance and update bio in https://github.com/settings/profile if desired. No account settings changed in this branch.
+- The scheduled workflow is unchanged and remains main-only. V2 restyles the generator and the last real SVG output without modifying underlying numeric values. CI runs real API generation in a temporary runner, no publishing. Language bytes measure composition, not proficiency; contribution aggregates may reflect private activity depending on GitHub settings.
+- Browser smoke test renders a local reconstruction of image rows on dark, light and narrow layouts and uploads screenshots. It does not reproduce GitHub's full native Markdown renderer, verify external links, or prove visual readability/animation in all browsers. Review actual branch README before publishing.
+- Spotify is not connected; no credentials, secrets or integration were added. No merge without separate owner approval.

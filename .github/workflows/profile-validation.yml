@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [upgrade/profile-command-center]
+    branches: [upgrade/profile-command-center, upgrade/profile-command-center-v2]
 permissions:
   contents: read
 jobs:
@@ -17,9 +17,17 @@ jobs:
       - name: Offline tests and SVG validation
         run: python3 scripts/telemetry.py --test
       - name: Live telemetry smoke test (read-only, no publishing)
-        if: github.repository == 'DanoV1m/DanoV1m' && (github.ref == 'refs/heads/upgrade/profile-command-center' || (github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'upgrade/profile-command-center'))
+        if: github.repository == 'DanoV1m/DanoV1m' && (github.ref == 'refs/heads/upgrade/profile-command-center' || github.ref == 'refs/heads/upgrade/profile-command-center-v2' || (github.event.pull_request.head.repo.full_name == github.repository && (github.event.pull_request.head.ref == 'upgrade/profile-command-center' || github.event.pull_request.head.ref == 'upgrade/profile-command-center-v2')))
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 scripts/telemetry.py
           python3 scripts/telemetry.py --test
+      - name: Visual browser smoke checks
+        run: python3 scripts/visual_preview.py
+      - name: Upload layout screenshots
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: profile-v2-visual-preview
+          path: visual-preview/*.png
+          retention-days: 14

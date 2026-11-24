@@ -1,36 +1,21 @@
-<p align="center"><img src="assets/engineering-banner.svg" alt="Idan Vimenetz — electrical and electronics engineering student" width="100%"/></p>
-<p align="center"><img src="assets/typing-header.svg" alt="Design, build, simulate, validate" width="100%"/></p>
+<p align="center"><img src="assets/engineering-banner.svg" width="100%" alt="Idan Vimenetz — Electrical &amp; Electronics Engineering Student"/></p>
+<p align="center"><img src="assets/typing-header.svg" width="75%" alt="Design, build, simulate, validate"/> <a href="https://linkedin.com/in/idan-vimenetz"><img src="assets/linkedin-button.svg" width="23%" alt="Connect on LinkedIn"/></a></p>
 
-<p align="center"><a href="https://linkedin.com/in/idan-vimenetz"><img src="https://img.shields.io/badge/LinkedIn-Connect-2563EB?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"/></a> <a href="https://github.com/DanoV1m">GitHub</a></p>
+<img src="assets/system-overview.svg" width="100%" alt="Building, simulating and implementing engineering solutions that connect mathematical models, software and real-world hardware. Tech focus: Control Systems, Embedded, DSP, Simulation, IoT, Software."/>
 
-## 01 // System overview
+<img src="assets/tech-stack.svg" width="100%" alt="Technology stack: C, C++, Python, MATLAB, Arduino, React, TypeScript, Firebase, Git"/>
 
-```text
-danov1m@engineering:~$ whoami
-Electrical & Electronics Engineering Student
-Ruppin Academic Center
-danov1m@engineering:~$ mission
-Connecting mathematical models, software and physical hardware.
-```
-
-I build educational engineering projects in feedback control, robotics, digital signal and image processing, computer architecture and systems programming. I distinguish simulations and experimental work from physically validated results.
-
-## 02 // Technology stack
-
-<img src="assets/tech-stack.svg" width="100%" alt="C, C++, Python, MATLAB, Arduino, React, TypeScript, Firebase, Git"/>
-
-<p align="center"><img src="https://skillicons.dev/icons?i=c,cpp,python,matlab,arduino,react,ts,firebase,git&amp;theme=dark" alt="Technology icons: C, C++, Python, MATLAB, Arduino, React, TypeScript, Firebase, Git"/></p>
-
-Embedded and digital systems: Arduino, FPGA coursework, digital logic, circuit analysis. Engineering methods: modeling, simulation, debugging, documentation and testing.
-
-## 03 // Featured engineering projects
+<img src="assets/projects-heading.svg" width="100%" alt="03 — Featured engineering projects"/>
 
 <p align="center">
-<a href="https://github.com/DanoV1m/pid-control-simulator"><img src="assets/projects/pid-simulator.svg" width="48%" alt="PID Control Simulator"/></a>
-<a href="https://github.com/DanoV1m/Arduino-Line-Follower-Robot"><img src="assets/projects/line-follower.svg" width="48%" alt="Autonomous Line Follower"/></a>
-<a href="https://github.com/DanoV1m/SmartPixelProcessor"><img src="assets/projects/smartpixel.svg" width="48%" alt="SmartPixelProcessor"/></a>
-<a href="https://github.com/DanoV1m/EasyCharge-System"><img src="assets/projects/easycharge.svg" width="48%" alt="EasyCharge System"/></a>
+<a href="https://github.com/DanoV1m/pid-control-simulator"><img src="assets/projects/pid-simulator.svg" width="49%" alt="PID Control Simulator — Python, SciPy, Streamlit"/></a>
+<a href="https://github.com/DanoV1m/Arduino-Line-Follower-Robot"><img src="assets/projects/line-follower.svg" width="49%" alt="Autonomous Line Follower — Arduino, C++"/></a><br/>
+<a href="https://github.com/DanoV1m/SmartPixelProcessor"><img src="assets/projects/smartpixel.svg" width="49%" alt="SmartPixelProcessor — MATLAB"/></a>
+<a href="https://github.com/DanoV1m/EasyCharge-System"><img src="assets/projects/easycharge.svg" width="49%" alt="EasyCharge System — C"/></a>
 </p>
+
+<details>
+<summary>Project details, live demo and validation notes</summary>
 
 | Project | Engineering focus |
 | --- | --- |
@@ -41,26 +26,26 @@ Embedded and digital systems: Arduino, FPGA coursework, digital logic, circuit a
 
 Card graphics are illustrations, not measured results or screenshots.
 
-## 04 // Development telemetry
 
-<img src="generated/github-stats.svg" width="100%" alt="Public repository statistics"/>
+</details>
+
+<img src="generated/github-stats.svg" width="100%" alt="04 — Public repository statistics"/>
 <img src="generated/top-languages.svg" width="100%" alt="Public repository language distribution"/>
 
-Language bytes are repository composition, not proficiency. Public, owned, non-fork repositories only.
+<img src="generated/contribution-3d.svg" width="100%" alt="05 — Isometric GitHub contribution calendar"/>
 
-## 05 // 3D contribution map
+<img src="generated/contribution-snake.svg" width="100%" alt="06 — Animated snake sweep over GitHub contribution calendar"/>
 
-<img src="generated/contribution-3d.svg" width="100%" alt="Isometric GitHub contribution calendar"/>
+<img src="assets/spotify-pending.svg" width="100%" alt="07 — Spotify not connected; owner authorization required"/>
 
-## 06 // Contribution snake
+<details>
+<summary>About the data and technical toolbox</summary>
 
-<img src="generated/contribution-snake.svg" width="100%" alt="Animated snake sweep over GitHub contribution calendar"/>
+Language bytes are repository composition, not proficiency. Public, owned, non-fork repositories only. Calendar graphics use GitHub's contribution aggregate, not private repository names or code. They may reflect aggregate private activity if GitHub exposes it under profile visibility settings.
 
-Calendar graphics use GitHub's contribution aggregate, not private repository names or code. They may reflect aggregate private activity if GitHub exposes it under profile visibility settings.
+Embedded and digital systems: Arduino, FPGA coursework, digital logic, circuit analysis. Engineering methods: modeling, simulation, debugging, documentation and testing.
 
-## 07 // Engineering soundtrack
-
-<img src="assets/spotify-pending.svg" width="100%" alt="Spotify not connected; owner authorization required"/>
+</details>
 
 ## Academic background
 
