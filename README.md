@@ -1,46 +1,41 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,11,20,30&height=220&section=header&text=Idan%20Vimenetz&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Electrical%20Engineering%20Student%20&%20AI%20Enthusiast%20⚡🤖&descSize=20&descAlignY=65" width="100%"/>
-</p>
+# Idan Vimenetz
 
-<p align="center">
-  <a href="https://linkedin.com/in/idan-vimenetz" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:vimidan99@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</p>
+**Electrical & Electronics Engineering Student | Embedded Systems · Control · DSP · Software**
 
----
+I build engineering projects that connect mathematical models, software and physical hardware. My interests include feedback control, robotics, digital signal processing and computer architecture.
 
-### 👨‍💻 About Me
-I am an Electrical Engineering student at Ruppin Academic Center, with a deep passion for combining artificial intelligence and developing simulation tools that help break down complex subjects and course materials into simple, smart understanding. I love building projects connected to the world of hardware, control systems, and systems programming.
+[LinkedIn](https://linkedin.com/in/idan-vimenetz) · [GitHub](https://github.com/DanoV1m)
 
----
+## Selected engineering projects
 
-### 📚 Academic Background & Core Coursework
-Throughout my studies, I have built a strong theoretical and practical foundation in both hardware and software engineering:
+| Project | Engineering focus | Implementation |
+| --- | --- | --- |
+| [Autonomous Line Follower](https://github.com/DanoV1m/Arduino-Line-Follower-Robot) | Sensor-based navigation, differential drive | Arduino / C++ |
+| [PID Control Simulator](https://github.com/DanoV1m/pid-control-simulator) | Transfer functions, feedback, transient and frequency response | Python / SciPy / Streamlit |
+| [SmartPixelProcessor](https://github.com/DanoV1m/SmartPixelProcessor) | Intensity transforms, grayscale, edge detection | MATLAB |
+| [EasyCharge System](https://github.com/DanoV1m/EasyCharge-System) | EV charging simulation, queues, trees and file persistence | C |
 
-* **Mathematics & Physics:** Infinitesimal Calculus (I & II), Linear Algebra, Physics (I & II), Ordinary Differential Equations (ODE), Partial Differential Equations (PDE).
-* **Software & Programming:** Principles of Programming & C Language, Advanced C Programming Topics, TypeScript, Python, MATLAB.
-* **Core Electrical & Computer Engineering:** Circuit Theory, Digital Systems, Computer Architecture, Digital Systems Laboratory (using FPGA), Electrical Circuits Laboratory.
+Each project documents its implementation and limitations. Experimental results are distinguished from verified results.
 
----
+## Technical toolbox
 
-### 🛠️ Technologies & Tools
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/FPGA-7377AD?style=for-the-badge&logo=latticesemiconductor&logoColor=white" />
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
-</p>
+- **Embedded and digital systems:** Arduino, FPGA coursework, digital logic, circuit analysis
+- **Programming:** C, C++, Python, MATLAB, TypeScript
+- **Engineering methods:** mathematical modeling, system simulation, debugging, documentation and testing
 
----
+## Academic background
 
-### 📊 GitHub Stats & Top Languages
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DanoV1m&show_icons=true&theme=radical&hide_border=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DanoV1m&layout=compact&theme=radical&hide_border=true" width="48%" />
-</p>
+Electrical Engineering, Ruppin Academic Center. Coursework includes circuit theory, digital systems, computer architecture, differential equations, mathematics and physics.
+
+## Current interests
+
+Reliable feedback controllers, signal and image processing, embedded software, and educational engineering tools.
+
+## Engineering review branches
+
+The following links lead to proposed upgrades, not released versions. Each repository contains implementation notes and validation steps.
+
+- [Control systems review](https://github.com/DanoV1m/pid-control-simulator/tree/upgrade/engineering-review): root locus, Nyquist and actuator saturation experiments.
+- [Embedded robotics review](https://github.com/DanoV1m/Arduino-Line-Follower-Robot/tree/upgrade/engineering-review): optional discrete PID and bench validation protocol.
+- [Image processing review](https://github.com/DanoV1m/SmartPixelProcessor/tree/upgrade/engineering-review): spatial filtering, FFT and image similarity metrics.
+- [C systems review](https://github.com/DanoV1m/EasyCharge-System/tree/upgrade/engineering-review): ownership fixes, staged persistence and cross-platform checks.
