@@ -30,3 +30,12 @@ Electrical Engineering, Ruppin Academic Center. Coursework includes circuit theo
 ## Current interests
 
 Reliable feedback controllers, signal and image processing, embedded software, and educational engineering tools.
+
+## Engineering review branches
+
+The following links lead to proposed upgrades, not released versions. Each repository contains implementation notes and validation steps.
+
+- [Control systems review](https://github.com/DanoV1m/pid-control-simulator/tree/upgrade/engineering-review): root locus, Nyquist and actuator saturation experiments.
+- [Embedded robotics review](https://github.com/DanoV1m/Arduino-Line-Follower-Robot/tree/upgrade/engineering-review): optional discrete PID and bench validation protocol.
+- [Image processing review](https://github.com/DanoV1m/SmartPixelProcessor/tree/upgrade/engineering-review): spatial filtering, FFT and image similarity metrics.
+- [C systems review](https://github.com/DanoV1m/EasyCharge-System/tree/upgrade/engineering-review): ownership fixes, staged persistence and cross-platform checks.
