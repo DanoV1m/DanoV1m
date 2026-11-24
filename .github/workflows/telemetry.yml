@@ -1,0 +1,36 @@
+name: Refresh engineering telemetry
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: engineering-telemetry
+  cancel-in-progress: false
+jobs:
+  refresh:
+    # Only after the owner separately approves publishing to the default branch.
+    if: github.repository == 'DanoV1m/DanoV1m' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Validate and regenerate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 scripts/telemetry.py --test
+          python3 scripts/telemetry.py
+          python3 scripts/telemetry.py --test
+      - name: Commit generated SVGs only
+        run: |
+          test "$GITHUB_REF" = refs/heads/main
+          git add -- generated/github-stats.svg generated/top-languages.svg generated/contribution-3d.svg generated/contribution-snake.svg
+          git diff --cached --quiet && exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh public engineering telemetry'
+          git push origin HEAD:refs/heads/main
