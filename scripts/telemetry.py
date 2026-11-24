@@ -109,14 +109,14 @@ def render(data, date):
     lang += text(22, 131, stamp + " · Composition, not proficiency", 11, "#94A3B8")
     iso = text(22, 30, "05 // 3D CONTRIBUTION LANDSCAPE", 16, "#67E8F9", "bold")
     for c, r, n in sorted(days, key=lambda d: (d[0], -d[1])):
-        x, y = 32 + c * 14 + (6-r) * 9, 113 + c * 1.2 - (6-r) * 4.7
+        x, y = 32 + c * 14 + (6-r) * 9, 133 + c * 1.2 - (6-r) * 4.7
         height = 0 if n == 0 else 4 + 58 * math.log1p(n) / math.log1p(maximum)
         t = y-height
         iso += f'<g><title>{n} contributions</title><path d="M{x},{t} l7,-3 7,3 -7,3 Z" fill="{color(n)}"/>'
         if height:
             iso += f'<path d="M{x},{t} l7,3 v{height} l-7,-3 Z" fill="#164C78"/><path d="M{x+7},{t+3} l7,-3 v{height} l-7,3 Z" fill="#176A9C"/>'
         iso += '</g>'
-    iso += text(22, 205, stamp + " · Height is logarithmic · One tile per day", 11, "#94A3B8")
+    iso += text(22, 225, stamp + " · Height is logarithmic · One tile per day", 11, "#94A3B8")
     snake = text(22, 30, "06 // CONTRIBUTION SNAKE / ANIMATED SWEEP", 16, "#67E8F9", "bold")
     for c, r, n in days:
         snake += f'<rect x="{22+c*16}" y="{44+r*16}" width="13" height="13" rx="2" fill="{color(n)}"><title>{n} contributions</title></rect>'
@@ -124,7 +124,7 @@ def render(data, date):
     path = "M" + " L".join(f"{x},{y}" for x,y in points)
     snake += f'<path id="route" d="{path}" fill="none" stroke="#7DD3FC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="5 95" stroke-dashoffset="5"><animate attributeName="stroke-dashoffset" values="5;-100" dur="25s" repeatCount="indefinite"/></path>'
     snake += text(22, 174, stamp + " · Animated path over actual contribution cells", 11, "#94A3B8")
-    return dict(zip(NAMES, [svg("Public repository statistics", 138, stats), svg("Public languages", 148, lang), svg("Contribution landscape", 223, iso), svg("Contribution snake", 190, snake)]))
+    return dict(zip(NAMES, [svg("Public repository statistics", 138, stats), svg("Public languages", 148, lang), svg("Contribution landscape", 243, iso), svg("Contribution snake", 190, snake)]))
 
 
 def check_assets(root):
