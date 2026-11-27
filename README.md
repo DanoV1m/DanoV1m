@@ -26,7 +26,7 @@
 | [SmartPixelProcessor](https://github.com/DanoV1m/SmartPixelProcessor) | Intensity transformations and edge detection |
 | [EasyCharge System](https://github.com/DanoV1m/EasyCharge-System) | Educational EV charging simulator, not a production service |
 
-SignalLab research candidate [PR #4](https://github.com/DanoV1m/SignalLab/pull/4): [verified snapshot](https://github.com/DanoV1m/SignalLab/commit/bf5a5ac6268163ad65cafc9471c3b5c5e1bd359e) passed 53 independent NumPy/SciPy cases and 139 numerical comparisons ([CI evidence](https://github.com/DanoV1m/SignalLab/actions/runs/46009785710)). This snapshot is not a released live demo. Card graphics are illustrations, not measured results or screenshots.
+SignalLab research candidate [PR #4](https://github.com/DanoV1m/SignalLab/pull/4): [verified snapshot](https://github.com/DanoV1m/SignalLab/commit/bf5a5ac6268163ad65cafc9471c3b5c5e1bd359e) passed 53 independent NumPy/SciPy cases and 139 numerical comparisons ([CI evidence](https://github.com/DanoV1m/SignalLab/actions/runs/46009785710)). A subsequent [verified research snapshot d7385de](https://github.com/DanoV1m/SignalLab/commit/d7385de79db7c1c938e6b04df815006042fe351c) passed [201 comparisons, 58 Node tests, 30 Chromium checks and synthetic Chromium/Firefox/WebKit compatibility](https://github.com/DanoV1m/SignalLab/actions/runs/46011558585), including analytic filter group delay. This snapshot is not a released live demo. Card graphics are illustrations, not measured results or screenshots.
 
 
 </details>

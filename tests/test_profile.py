@@ -12,5 +12,5 @@ class ProfileTests(unittest.TestCase):
             if p.suffix=='.svg': ET.parse(p)
     def test_signallab_evidence(self):
         content=(ROOT/'README.md').read_text()
-        for token in ['assets/projects/signallab.svg','https://github.com/DanoV1m/SignalLab','46009785710','not a released live demo']:
+        for token in ['assets/projects/signallab.svg','https://github.com/DanoV1m/SignalLab','46009785710','46011558585','not a released live demo']:
             self.assertIn(token,content)
