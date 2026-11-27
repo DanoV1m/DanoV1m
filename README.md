@@ -8,6 +8,7 @@
 <img src="assets/projects-heading.svg" width="100%" alt="03 — Featured engineering projects"/>
 
 <p align="center">
+<a href="https://github.com/DanoV1m/SignalLab"><img src="assets/projects/signallab.svg" width="49%" alt="SignalLab — independent digital signal processing engine and guided experiments"/></a><br/>
 <a href="https://github.com/DanoV1m/pid-control-simulator"><img src="assets/projects/pid-simulator.svg" width="49%" alt="PID Control Simulator — Python, SciPy, Streamlit"/></a>
 <a href="https://github.com/DanoV1m/Arduino-Line-Follower-Robot"><img src="assets/projects/line-follower.svg" width="49%" alt="Autonomous Line Follower — Arduino, C++"/></a><br/>
 <a href="https://github.com/DanoV1m/SmartPixelProcessor"><img src="assets/projects/smartpixel.svg" width="49%" alt="SmartPixelProcessor — MATLAB"/></a>
@@ -19,12 +20,13 @@
 
 | Project | Engineering focus |
 | --- | --- |
+| [SignalLab](https://github.com/DanoV1m/SignalLab) · [Baseline CI](https://github.com/DanoV1m/SignalLab/actions/runs/46008429918) | Independent FFT, STFT, Butterworth, reconstruction, six guided experiments; 45 Node and 24 Chromium checks in baseline CI |
 | [PID Control Simulator](https://github.com/DanoV1m/pid-control-simulator) · [Documented live demo](https://idan-pid-simulator.streamlit.app/) | LTI feedback, transient and frequency response |
 | [Autonomous Line Follower](https://github.com/DanoV1m/Arduino-Line-Follower-Robot) | Sensor-based navigation; experimental PID not physically retested |
 | [SmartPixelProcessor](https://github.com/DanoV1m/SmartPixelProcessor) | Intensity transformations and edge detection |
 | [EasyCharge System](https://github.com/DanoV1m/EasyCharge-System) | Educational EV charging simulator, not a production service |
 
-Card graphics are illustrations, not measured results or screenshots.
+SignalLab research candidate [PR #4](https://github.com/DanoV1m/SignalLab/pull/4): [verified snapshot](https://github.com/DanoV1m/SignalLab/commit/bf5a5ac6268163ad65cafc9471c3b5c5e1bd359e) passed 53 independent NumPy/SciPy cases and 139 numerical comparisons ([CI evidence](https://github.com/DanoV1m/SignalLab/actions/runs/46009785710)). This snapshot is not a released live demo. Card graphics are illustrations, not measured results or screenshots.
 
 
 </details>

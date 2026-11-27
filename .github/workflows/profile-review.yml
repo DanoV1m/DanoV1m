@@ -1,0 +1,15 @@
+name: Profile review
+on:
+  push:
+    branches: ['upgrade/excellence-board-profile-v2']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p test_profile.py -v
